@@ -41,9 +41,10 @@
 }
 
 .res-card:hover{
-    box-shadow: 0px 0px 5px 2px grey;
+    box-shadow: 0px 0px 7px 6px grey;
     transition: ease-in 0.3s;
     cursor: pointer;
+    width: 221px;
 }
 
 .res-card > img{
