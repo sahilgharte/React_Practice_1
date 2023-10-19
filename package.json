@@ -1,0 +1,31 @@
+{
+  "name": "react-app",
+  "version": "1.0.0",
+  "description": "This is my first react app",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sahilgharte/React_Practice_1.git"
+  },
+  "author": "sahil gharte",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sahilgharte/React_Practice_1/issues"
+  },
+  "homepage": "https://github.com/sahilgharte/React_Practice_1#readme",
+  "devDependencies": {
+    "@parcel/source-map": "^2.1.1",
+    "parcel": "^2.10.0"
+  },
+  "dependencies": {
+    "npx": "^10.2.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserslist":[
+    "last 2 versions"
+  ]
+}
