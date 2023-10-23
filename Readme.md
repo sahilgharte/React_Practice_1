@@ -30,35 +30,5 @@
  2. How jsx works.
  3. Difference of jsx and html, js.
 
- # ------------- Day 6 -------------
- 1. Why JSX code is more reliable in development perspective as compare to React and ReactDOM.
- 2. Understood the basics for jsx.
- 3. Single and multi line code for jsx.
 
-  # ------------- Day 7 --------------
-  1. Learn about the React Components.
-  2. Understood Functional Component & Class Component
-  3. Uses, how to use and different approches to use functional component.
-  4. JSX escape any malacious data that may come from bad api or any where else.
-  5. JSE sanitizes all the malicious data .
-
-  # ------------- Day 8 --------------
-  1. Started building an Food Ordering App.
-  2. Understood the requirements.
-  3. Made a simple planning for the UI design for the food ordering app.
-  4. Made a low level planning for the structure, which and what components can be used.
-  5. Added a App-Component and Header Component for building food ordering app.
-  6. Added some styling for App-component & Header.
-
-  # ------------- Day 9 --------------
-  1. Started wotking on body.
-  2. Added Search bar, Restaurant cards and some styling.
-  3. Added dyanamic data for all restaurant data (swiggy api).
-  4. Understood what is props in react (acts as in arguments as at the end it is a function) .
-  5. Shown the restaurant cards dyanamic from the real data (Swiggy API).
-  6. Optimised the code and use maps for looping throught the Restaurant Compoment.
-  7. Understood the importance of using key while using loop.
-  8. Never ever use index as an key.
-  9. If no key use the react won't understand new data and will re-render the whole data.
-  10. If uniquekey is used then will render only the new data.
   
