@@ -22,7 +22,8 @@
  5. How to build prod-build - npx parcel build index.html
  6. What is dist file (created after the build).
  7. Looked and use browserlist. 
- 8. Understood how to support our web to all(majority) browsers.
+ 8. Understood how to support our application to all(majority) browsers (using browsers list).
+
 
  # ------------- Day 5 -------------
  1. Undertood what is JSX and its working.
