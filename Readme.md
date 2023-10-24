@@ -23,3 +23,13 @@
  6. What is dist file (created after the build).
  7. Looked and use browserlist. 
  8. Understood how to support our web to all(majority) browsers.
+
+ # ------------- Day 5 -------------
+ 1. Undertood what is JSX and its working.
+ 2. How jsx works.
+ 3. Difference of jsx and html, js.
+
+ # ------------- Day 6 -------------
+ 1. Why JSX code is more reliable in development perspective as compare to React and ReactDOM.
+ 2. Understood the basics for jsx.
+ 3. Single and multi line code for jsx.
