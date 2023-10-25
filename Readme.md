@@ -35,7 +35,7 @@
  2. Understood the basics for jsx.
  3. Single and multi line code for jsx.
 
-  # ------------- Day 7 -------------
+  # ------------- Day 7 --------------
   1. Learn about the React Components.
   2. Understood Functional Component & Class Component
   3. Uses, how to use and different approches to use functional component.
