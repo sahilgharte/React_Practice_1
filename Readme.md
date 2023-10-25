@@ -34,3 +34,8 @@
  1. Why JSX code is more reliable in development perspective as compare to React and ReactDOM.
  2. Understood the basics for jsx.
  3. Single and multi line code for jsx.
+
+  # ------------- Day 7 -------------
+  1. Learn about the React Components.
+  2. Understood Functional Component & Class Component
+  3. Uses, how to use and different approches to use functional component.

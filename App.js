@@ -37,20 +37,42 @@ import ReactDOM from "react-dom/client";
 // JSX (using parcel(babel)) -------> ES6 engine can understand.
 // JSX ---> React.createElement --> React object ---> Html element
 // only camel casing works hear
-const jsxheading =(<div>Inside 1st div
 
-<div>Inside 2nd div
+
+// ----------------------------------------------
+
+const jsxheading =(<div>
+
+<div>
     <div>
-        <h1 id="heading">Inside h1 tag</h1>
+        <h1 id="heading">Inside React Element</h1>
     </div>
 </div>
 
 </div>)
 
-console.log(jsxheading);
+// Functional component
+
+const TestComponent = () => (
+    <div className="testcontainer">
+        <h1>Heading from TestComponent ..</h1>
+        {jsxheading}
+    </div>
+);
+
+const HeadingComponent = () => (
+    <div className="headingcontainer">
+        <h2>Heading form Head Component ..</h2>
+        <TestComponent/>
+        {TestComponent()}
+    </div>
+);
+
 
 // ------------------------
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(jsxheading);
+root.render(<HeadingComponent/>);
+
+// ------------------------------------------------------------------------
