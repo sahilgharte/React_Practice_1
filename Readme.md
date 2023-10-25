@@ -39,3 +39,5 @@
   1. Learn about the React Components.
   2. Understood Functional Component & Class Component
   3. Uses, how to use and different approches to use functional component.
+  4. JSX escape any malacious data that may come from bad api or any where else.
+  5. JSE sanitizes all the malicious data.
