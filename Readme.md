@@ -48,4 +48,4 @@
   3. Made a simple planning for the UI design for the food ordering app.
   4. Made a low level planning for the structure, which and what components can be used.
   5. Added a App-Component and Header Component for building food ordering app.
-  6. Added some styling for App-component.
+  6. Added some styling for App-component & Header.

@@ -7,3 +7,12 @@
     height: 80px;
 }
 
+.nav-links > ul{
+    display: flex;
+}
+
+.nav-links > ul > li{
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+}
