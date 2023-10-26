@@ -1,6 +1,9 @@
-#heading{
-    color: red;
+.header{
+    display: flex;
+    justify-content: space-between;
 }
-.heading{
-    background-color: antiquewhite;
+
+.logo > img{
+    height: 80px;
 }
+

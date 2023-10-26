@@ -41,38 +41,69 @@ import ReactDOM from "react-dom/client";
 
 // ----------------------------------------------
 
-const jsxheading =(<div>
+// const jsxheading =(<div>
 
-<div>
-    <div>
-        <h1 id="heading">Inside React Element</h1>
-    </div>
-</div>
+// <div>
+//     <div>
+//         <h1 id="heading">Inside React Element</h1>
+//     </div>
+// </div>
 
-</div>)
+// </div>)
 
 // Functional component
 
-const TestComponent = () => (
-    <div className="testcontainer">
-        <h1>Heading from TestComponent ..</h1>
-        {jsxheading}
-    </div>
-);
+// const TestComponent = () => (
+//     <div className="testcontainer">
+//         <h1>Heading from TestComponent ..</h1>
+//         {jsxheading}
+//     </div>
+// );
 
-const HeadingComponent = () => (
-    <div className="headingcontainer">
-        <h2>Heading form Head Component ..</h2>
-        <TestComponent/>
-        {TestComponent()}
+// const HeadingComponent = () => (
+//     <div className="headingcontainer">
+//         <h2>Heading form Head Component ..</h2>
+//         <TestComponent/>
+//         {TestComponent()}
+//     </div>
+// );
+
+// ------------------------
+
+// Code for food ordering app
+
+const HeaderComponent = () =>{
+    return (
+        <div className="header">
+            <div className="logo">
+                <img src="https://imgs.search.brave.com/XJxGdNB8aQGeRDWYpjeoePrMc8un8-Nznyx8n0FOLM4/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9ncmFw/aGljc3ByaW5ncy5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjMvMDQvNGJhZDhj/MWY0NTJmNDZhNGMw/OTIzMTE1NDE5ZGY2/ZjAuc3ZnP3g0MDMy/OA.svg" alt="LOGO not rendered yet"/>
+            </div>
+
+            <div className="nav-links">
+                <ul>
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                    <li>Card</li>
+                </ul>
+            </div>
+        </div>
+    );
+};
+
+const AppComponent = () =>{
+return (
+    <div className="app">
+        <HeaderComponent/>
     </div>
 );
+};
 
 
 // ------------------------
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<HeadingComponent/>);
+root.render(<AppComponent/>);
 
 // ------------------------------------------------------------------------

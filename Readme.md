@@ -41,3 +41,11 @@
   3. Uses, how to use and different approches to use functional component.
   4. JSX escape any malacious data that may come from bad api or any where else.
   5. JSE sanitizes all the malicious data .
+
+  # ------------- Day 8 --------------
+  1. Started building an Food Ordering App.
+  2. Understood the requirements.
+  3. Made a simple planning for the UI design for the food ordering app.
+  4. Made a low level planning for the structure, which and what components can be used.
+  5. Added a App-Component and Header Component for building food ordering app.
+  6. Added some styling for App-component.
