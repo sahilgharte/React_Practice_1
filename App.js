@@ -72,6 +72,21 @@ import ReactDOM from "react-dom/client";
 
 // Code for food ordering app
 
+
+const RestaurantCard = () =>{
+    return (
+        // style={{backgroundColor: "#f0f0f0"}} -> inline styling format
+        <div className="res-card"> 
+            <img alt="Card-Image" src="https://imgs.search.brave.com/2ymVtaLQRp8rNEaAOjQpJjpvJ2FZu2fOCpdHQv6wheE/rs:fit:500:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA1LzUxLzA3LzI1/LzM2MF9GXzU1MTA3/MjU1OF9yRU51eDlm/cWxlYzVHUEJKU2FU/b1Q2OXhqY1lpR3hq/ZS5qcGc"/>
+            <h3>Meghna Foods</h3>
+            <h4>Biryani, North Indian, Asian</h4>
+            <h4>4.4 Starts</h4>
+            <h4>38 Minutes</h4>
+        </div>
+    );
+}
+
+
 const HeaderComponent = () =>{
     return (
         <div className="header">
@@ -91,10 +106,30 @@ const HeaderComponent = () =>{
     );
 };
 
+const BodyComponent = () =>{
+    return (
+        <div className="body">
+            <div className="res-search">Search</div>
+            <div className="res-container">
+                <RestaurantCard/>
+                <RestaurantCard/>
+                <RestaurantCard/>
+                <RestaurantCard/>
+                <RestaurantCard/>
+                <RestaurantCard/>
+                <RestaurantCard/>
+                <RestaurantCard/>
+                <RestaurantCard/>
+            </div>
+        </div>
+    );
+}
+
 const AppComponent = () =>{
 return (
     <div className="app">
         <HeaderComponent/>
+        <BodyComponent/>
     </div>
 );
 };

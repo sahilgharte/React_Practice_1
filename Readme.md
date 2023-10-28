@@ -49,3 +49,7 @@
   4. Made a low level planning for the structure, which and what components can be used.
   5. Added a App-Component and Header Component for building food ordering app.
   6. Added some styling for App-component & Header.
+
+  # ------------- Day 9 --------------
+  1. Started wotking on body.
+  2. Added Search bar, Restaurant cards and some styling;
