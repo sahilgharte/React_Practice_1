@@ -52,4 +52,7 @@
 
   # ------------- Day 9 --------------
   1. Started wotking on body.
-  2. Added Search bar, Restaurant cards and some styling;
+  2. Added Search bar, Restaurant cards and some styling.
+  3. Added dyanamic data for all restaurant data (swiggy api).
+  4. Understood what is props in react (acts as in arguments as at the end it is a function) .
+  5. Shown the restaurant cards dyanamic from the real data (Swiggy API).
