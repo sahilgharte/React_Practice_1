@@ -1,4 +1,4 @@
-## This is my first react code
+## Get some React 🚀👩‍🚀
 
 # ------------- Day 1 -------------
  1. Created first React Hello World code.
