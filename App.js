@@ -1641,7 +1641,7 @@ const BodyComponent = () =>{
                         // we can use index a key but it is a very bad practice
                         // Unique Key >>>>>>>>> index
                         // Only use index if and only if there is no unique is
-                        resList.map(restaurant, index => (
+                        resList.map((restaurant, index) => (
                             <RestaurantCard key={restaurant.info.id} resData = {restaurant} />
                         ))
                     }
