@@ -59,4 +59,5 @@
   6. Optimised the code and use maps for looping throught the Restaurant Compoment.
   7. Understood the importance of using key while using loop.
   8. Never ever use index as an key.
-.
+  9. If no key use the react won't understand new data and will re-render the whole data and if used the will render only the new data.
+  
