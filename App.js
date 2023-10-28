@@ -1591,16 +1591,23 @@ const RestaurantCard = (props) =>{
     console.log("----> "+ props)
 
     const {resData} = props;
+    const {cloudinaryImageId, name, cuisines, avgRating, costForTwo, sla} = resData.info;
 
     return (
         // style={{backgroundColor: "#f0f0f0"}} -> inline styling format
         <div className="res-card"> 
-            <img alt="Card-Image" src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + resData.info.cloudinaryImageId}/>
-            <h4>{resData.info.name}</h4>
-            <h5>{resData.info.cuisines.join(", ")}</h5>
-            <h5>{resData.info.avgRating} Stars</h5>
-            <h5>{resData.info.costForTwo}</h5>
-            <h5>{resData.info.sla.deliveryTime} Minutes</h5>
+                <img alt="Card-Image" src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + cloudinaryImageId}/>
+            <div className="card-info">
+                <div>
+                    <h4>{name}</h4>
+                    <h5>{cuisines.join(", ")}</h5>
+                </div>
+                <div className="card-details">
+                    <h5>{avgRating}</h5>
+                    <h5>{costForTwo}</h5>
+                    <h5>{sla.deliveryTime} Minutes</h5>
+                </div>
+            </div>
         </div>
     );
 }
@@ -1618,7 +1625,7 @@ const HeaderComponent = () =>{
                     <li>Home</li>
                     <li>About Us</li>
                     <li>Contact Us</li>
-                    <li>Card</li>
+                    <li>Cart</li>
                 </ul>
             </div>
         </div>
@@ -1630,16 +1637,15 @@ const BodyComponent = () =>{
         <div className="body">
             <div className="res-search">Search</div>
             <div className="res-container">
-                {/* for(int i=0; i < resList.length(); i++){ */}
-                    <RestaurantCard resData = {resList[0]}/>
-                    <RestaurantCard resData = {resList[1]}/>
-                    <RestaurantCard resData = {resList[2]}/>
-                    <RestaurantCard resData = {resList[3]}/>
-                    <RestaurantCard resData = {resList[4]}/>
-                    <RestaurantCard resData = {resList[5]}/>
-                    <RestaurantCard resData = {resList[6]}/>
-                    <RestaurantCard resData = {resList[7]}/>
-                {/* } */}
+                    {
+                        // we can use index a key but it is a very bad practice
+                        // Unique Key >>>>>>>>> index
+                        // Only use index if and only if there is no unique is
+                        resList.map(restaurant, index => (
+                            <RestaurantCard key={restaurant.info.id} resData = {restaurant} />
+                        ))
+                    }
+
     
             </div>
         </div>
