@@ -20,5 +20,12 @@ const Header = () =>{
         </div>
     );
 };
-
+// Default Export
 export default Header;
+
+// Using named export as default export
+// const MyComponent = () => {
+//     // Your component code here
+// };
+
+// export { MyComponent as default, MyComponent };
