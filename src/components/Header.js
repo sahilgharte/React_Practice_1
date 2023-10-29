@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
 import { APP_LOGO } from "../utils/constants";
 
 const Header = () =>{

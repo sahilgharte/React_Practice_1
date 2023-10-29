@@ -6,7 +6,7 @@ const RestaurantCard = (props) =>{
     console.log("----> "+ props)
 
     const {resData} = props;
-    const {cloudinaryImageId, name, cuisines, avgRating, costForTwo, sla} = resData.info;
+    const {cloudinaryImageId, name, cuisines, avgRating, costForTwo, sla} = resData?.info;
 
     return (
         // style={{backgroundColor: "#f0f0f0"}} -> inline styling format
