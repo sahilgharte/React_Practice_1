@@ -65,5 +65,6 @@
    # ------------- Day 10 --------------
    1. Structure the whole project in different compoenents.
    2. Learned how to export and import things.
+   3. Learned types of export a. Default (export only single) b. Named (export for multiple exports).
 
   
