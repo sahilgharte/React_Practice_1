@@ -61,4 +61,11 @@
   8. Never ever use index as an key.
   9. If no key use the react won't understand new data and will re-render the whole data.
   10. If uniquekey is used then will render only the new data.
+
+   # ------------- Day 10 --------------
+   1. Structure the whole project in different compoenents.
+   2. Learned how to export and import things.
+   3. Learned types of export a. Default (export only single) b. Named (export for multiple exports).
+   4. Clean the whole code.
+   5. Put all hardcoded values inside the utils.
   
