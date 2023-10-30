@@ -68,4 +68,6 @@
    3. Learned types of export a. Default (export only single) b. Named (export for multiple exports).
    4. Clean the whole code.
    5. Put all hardcoded values inside the utils.
-  
+   
+   # ------------- Day 10 --------------
+   1. Added filter button for top rated restaurants.

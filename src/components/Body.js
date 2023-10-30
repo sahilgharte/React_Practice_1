@@ -6,7 +6,9 @@ import resList from "../utils/mockData";
 const Body = () =>{
     return (
         <div className="body">
-            <div className="res-search">Search</div>
+            <div className="res-filter-btn">
+                <button className="filter-btn">Top Rated Restaurant</button>
+            </div>
             <div className="res-container">
                     {
                         // we can use index a key but it is a very bad practice
