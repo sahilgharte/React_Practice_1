@@ -76,3 +76,6 @@
    4. Learn how to use useState.
    4. Learn that useState maintains the state of component.
    5. It help to make the UI and Data layer interactive.
+   6. Understood the React working using reconciliation Algo/React Fiber.
+   7. Understood the working of React Fiber.
+   8. Understood the Diff Algo used in React Algo.
