@@ -70,7 +70,7 @@
    5. Put all hardcoded values inside the utils.
    
    # ------------- Day 10 --------------
-   1. Added filter button for top rated restaurants.
+   1. Added filter button for top rated restaurants and added its functionality using hooks.
    2. Understood what are hooks in react.
    3. Understood the two major hooks a. useState and b. userEffect.
    4. Learn how to use useState.
