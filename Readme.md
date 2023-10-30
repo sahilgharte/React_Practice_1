@@ -71,3 +71,8 @@
    
    # ------------- Day 10 --------------
    1. Added filter button for top rated restaurants.
+   2. Understood what are hooks in react.
+   3. Understood the two major hooks a. useState and b. userEffect.
+   4. Learn how to use useState.
+   4. Learn that useState maintains the state of component.
+   5. It help to make the UI and Data layer interactive.
