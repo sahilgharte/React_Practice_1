@@ -85,5 +85,3 @@
    2. Understood the difference between Monolith and Microservices architecture and its uses.
    3. Understood how the Microservices works and some of its real usages.
    4. Learn about the 2 different approaches for API Calling:
-        a. | Page Loads | -> | API Calling | ---(page pause for 5s before rendering)--> | Render |.
-        b. | Page Loads | -> | Render | -> | API Calling | -> | Re-Rendering |  (Best Aprroch for User Expierence).
