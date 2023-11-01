@@ -19,7 +19,9 @@ const Body = () =>{
             }
     
             const json = await response.json();
-            console.log(json);
+            // setListOfRestaurant(jso)
+            console.log("response ---> " + JSON.stringify(json.data.cards[2].card.card.gridElements.infoWithStyle.restaurants));
+            setListOfRestaurant(json.data.cards[2].card.card.gridElements.infoWithStyle.restaurants);
         } catch (error) {
             console.error('Error fetching data:', error);
         }
