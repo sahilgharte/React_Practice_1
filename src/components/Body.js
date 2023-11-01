@@ -32,11 +32,8 @@ const Body = () =>{
     // 
      const [listOfRestaurant, setListOfRestaurant] = useState([]);
 
-     if(listOfRestaurant.length === 0){
-        return <Shimmer/>
-     }
-
-    return (
+    //  Conditional Rendering
+        return listOfRestaurant.length === 0? <Shimmer/> :  (
         <div className="body">
             <div className="res-filter-btn">
                 <button className="filter-btn" onClick={() => {
