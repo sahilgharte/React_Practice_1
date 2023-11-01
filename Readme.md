@@ -87,3 +87,8 @@
    4. Learn about the 2 different approaches for API Calling:
         a. | Page Loads | -> | API Calling | ---(page pause for 5s before rendering)--> | Render |.
         b. | Page Loads | -> | Render | -> | API Calling | -> | Re-Rendering |  (Best Aprroch for User Expierence).
+
+    # ------------- Day 12 --------------
+    1. Understood the 2 approaches for api calling.
+    2. Understood the useEffect - a react hook.
+    3. Called api using fetch using useEffect.
