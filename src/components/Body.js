@@ -2,9 +2,21 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import RestaurantCard from "./RestaurantCard";
 import resList from "../utils/mockData";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Body = () =>{
+
+    useEffect(() => {
+        fetchData();
+    },[]);
+
+    const fetchData = async () => {
+        const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=18.5204303&lng=73.8567437");
+
+        
+        const json = await data.json();
+        console.log(json);
+    }
 
     // 
      const [listOfRestaurant, setListOfRestaurant] = useState(resList);
