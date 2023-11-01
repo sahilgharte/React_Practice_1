@@ -31,6 +31,10 @@ const Body = () =>{
     // 
      const [listOfRestaurant, setListOfRestaurant] = useState([]);
 
+     if(listOfRestaurant.length === 0){
+        return (<div>Loading.....</div>);
+     }
+
     return (
         <div className="body">
             <div className="res-filter-btn">
