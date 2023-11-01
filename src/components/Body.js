@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import RestaurantCard from "./RestaurantCard";
-import resList from "../utils/mockData";
 import { useState, useEffect } from "react";
 
 const Body = () =>{
@@ -21,7 +20,7 @@ const Body = () =>{
             const json = await response.json();
             // setListOfRestaurant(jso)
             console.log("response ---> " + JSON.stringify(json.data.cards[2].card.card.gridElements.infoWithStyle.restaurants));
-            setListOfRestaurant(json.data.cards[2].card.card.gridElements.infoWithStyle.restaurants);
+            setListOfRestaurant(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
         } catch (error) {
             console.error('Error fetching data:', error);
         }
@@ -30,7 +29,7 @@ const Body = () =>{
     
 
     // 
-     const [listOfRestaurant, setListOfRestaurant] = useState(resList);
+     const [listOfRestaurant, setListOfRestaurant] = useState([]);
 
     return (
         <div className="body">
