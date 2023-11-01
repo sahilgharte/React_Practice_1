@@ -11,12 +11,21 @@ const Body = () =>{
     },[]);
 
     const fetchData = async () => {
-        const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=18.5204303&lng=73.8567437");
-
-        
-        const json = await data.json();
-        console.log(json);
+        try {
+            const response = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=18.5204303&lng=73.8567437");
+    
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+    
+            const json = await response.json();
+            console.log(json);
+        } catch (error) {
+            console.error('Error fetching data:', error);
+        }
     }
+    
+    
 
     // 
      const [listOfRestaurant, setListOfRestaurant] = useState(resList);
