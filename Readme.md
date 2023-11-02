@@ -93,3 +93,4 @@
     2. Understood the useEffect - a react hook.
     3. Called api using fetch using useEffect.
     4. Added Loader when no data received from api.
+    5. Added custom shimmer effect for better user expierence.
