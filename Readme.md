@@ -99,3 +99,4 @@
 
     1. Understood deeply the useState and how it works (const ..).
     2. Added login logout button on click using useState variable.
+    3. Added search bar for restaurant search.
