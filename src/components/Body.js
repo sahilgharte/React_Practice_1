@@ -33,7 +33,7 @@ const Body = () =>{
     // 
      const [listOfRestaurant, setListOfRestaurant] = useState([]);
      const [filterListOfRestaurant, setFilterListOfRestaurant] = useState([]);
-     const [searchFilter, setSearchFilter] = useState("");
+    //  const [searchFilter, setSearchFilter] = useState("");
 
     //  Conditional Rendering
         return listOfRestaurant.length === 0? <Shimmer/> :  (
@@ -42,11 +42,17 @@ const Body = () =>{
 
 
                 <div className="search">
-                    <input type="text" className="search-box" value={searchFilter} onChange={(e)=>{
-                        setSearchFilter(e.target.value)
+                    <input type="text" className="search-box" onChange={(e)=>{
+                        // setSearchFilter(e.target.value)
+
+                        const filteredRestaurant = listOfRestaurant.filter((res) => {
+                            return res.info.name.toLowerCase().includes(e.target.value.toLowerCase());   
+                        })
+
+                        setFilterListOfRestaurant(filteredRestaurant);
                     
                     }} />
-                    <button onClick={() => { 
+                    {/* <button onClick={() => { 
                         console.log(searchFilter);
 
                         const filteredRestaurant = listOfRestaurant.filter((res) => {
@@ -56,7 +62,7 @@ const Body = () =>{
                         setFilterListOfRestaurant(filteredRestaurant);
 
 
-                    }}>search</button>
+                    }}>search</button> */}
                 </div>
 
 
