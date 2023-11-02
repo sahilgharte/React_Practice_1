@@ -92,3 +92,4 @@
     1. Understood the 2 approaches for api calling.
     2. Understood the useEffect - a react hook.
     3. Called api using fetch using useEffect.
+    4. Added Loader when no data received from api.
