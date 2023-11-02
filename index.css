@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     border: 1px solid black;
+    margin: 0 10xp;
 }
 
 .logo > img {
@@ -62,7 +63,7 @@
     flex-wrap: wrap;
 }
 
-/* Shimmer Component Css */
+/* ------------- Shimmer Component Css ---------------- */
 
 
 .shimmer-container{
@@ -74,7 +75,7 @@
     padding: 5px;
     height: 300px;
     width: 220px;
-    background-color: #f0f0f0;
+    background-color: #939393;
     border-radius: 3%;
     margin: 5px;
     display: grid;
@@ -92,8 +93,8 @@
     animation-iteration-count: infinite;
     animation-name: shimmer;
     animation-timing-function: linear;
-    background: #ddd;
-    background: linear-gradient(to right, #F6F6F6 8%, #F0F0F0 18%, #F6F6F6 33%);
+    background: #a0a0a0;
+    background: linear-gradient(to right, #e3e3e3 8%, #ffffff 18%, #e3e3e3 33%);
     background-size: 1200px 100%;
     }
 
@@ -119,3 +120,10 @@
 
 
 /* ---------------------- */
+
+/* --------------  Header Login/Logout ------------- */
+
+.btn-login{
+    padding: 0 20px;
+    cursor: pointer;
+}
