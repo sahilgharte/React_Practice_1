@@ -104,3 +104,4 @@
     5. Added search features using React hook useState().
     6. Implemented search feature on search button press.
     7. Implemented search feature on keypress.
+    8. Implemented using a duplicate restaurant list avoid data losing while filtering.
