@@ -102,3 +102,4 @@
     3. Added search bar for restaurant search.
     4. Implement the logic/feature behind the searching of restaurant.
     5. Added search features using React hook useState().
+    6. Implemented search feature on search button press.
