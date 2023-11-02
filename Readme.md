@@ -94,5 +94,8 @@
     3. Called api using fetch using useEffect.
     4. Added Loader when no data received from api.
     5. Added custom shimmer effect for better user expierence.
-    6. Understood deeply the useState and how it works (const ..).
-    7. Added login logout button on click using useState variable.
+
+    # ------------- Day 13 --------------
+
+    1. Understood deeply the useState and how it works (const ..).
+    2. Added login logout button on click using useState variable.
