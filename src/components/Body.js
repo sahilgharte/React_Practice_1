@@ -46,7 +46,7 @@ const Body = () =>{
                         setSearchFilter(e.target.value)
                     
                     }} />
-                    <button onClick={() => {
+                    <button onClick={() => { 
                         console.log(searchFilter);
 
                         const filteredRestaurant = listOfRestaurant.filter((res) => {
