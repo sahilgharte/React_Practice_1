@@ -20,7 +20,7 @@ const Body = () =>{
     
             const json = await response.json();
             // setListOfRestaurant(jso)
-            console.log("response ---> " + JSON.stringify(json.data.cards[2].card.card.gridElements.infoWithStyle.restaurants));
+            // console.log("response ---> " + JSON.stringify(json.data.cards[2].card.card.gridElements.infoWithStyle.restaurants));
             setListOfRestaurant(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
             setFilterListOfRestaurant(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
         } catch (error) {
@@ -70,7 +70,7 @@ const Body = () =>{
                 <button className="filter-btn" onClick={() => {
                     const filterList = listOfRestaurant.filter((res) => res.info.avgRating > 4);
                     console.log(filterList);
-                    setListOfRestaurant(filterList);
+                    setFilterListOfRestaurant(filterList);
                 }}>Top Rated Restaurant</button>
             </div>
             <div className="res-container">
