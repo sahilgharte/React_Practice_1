@@ -105,3 +105,6 @@
     6. Implemented search feature on search button press.
     7. Implemented search feature on keypress.
     8. Implemented using a duplicate restaurant list avoid data losing while filtering.
+
+    # ------------- Day 14 --------------
+    1. Getting deep dive into the Useeffect and useState.
