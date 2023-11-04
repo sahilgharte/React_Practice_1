@@ -111,3 +111,4 @@
     2. Understood the the routing and how to use and its implementation.
     3. Added routing to the appComponent.
     4. Added own custom error component.
+    5. Handled the unknown routes error.
