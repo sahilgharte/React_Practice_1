@@ -108,3 +108,5 @@
 
     # ------------- Day 14 --------------
     1. Getting deep dive into the Useeffect and useState.
+    2. Understood the the routing and how to use and its implementation.
+    3. Added routing to the appComponent.
