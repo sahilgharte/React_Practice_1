@@ -112,3 +112,4 @@
     3. Added routing to the appComponent.
     4. Added own custom error component.
     5. Handled the unknown routes error.
+    6. Understood and implemented the children routing using Outlet.
