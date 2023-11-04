@@ -113,3 +113,4 @@
     4. Added own custom error component.
     5. Handled the unknown routes error.
     6. Understood and implemented the children routing using Outlet.
+    7. Used Link from react-router for onClick to render a compoenent.
