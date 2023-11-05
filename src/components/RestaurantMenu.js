@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactDOM } from "react";
+import ReactDOM from "react-dom/client";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 
@@ -14,7 +14,7 @@ const RestaurantMenu = () => {
         fetchMenu()
     }, [])
 
-    if (resInfo === null){
+if (resInfo === null){
         return <Shimmer/>
     }
 
