@@ -8,15 +8,12 @@ import Shimmer from "./Shimmer";
 
 const RestaurantMenu = () => {
 
-    const [resInfo, setResInfo] = useState("");
+    const [resInfo, setResInfo] = useState(null);
 
     useEffect(()=> {
         fetchMenu()
     }, [])
 
-if (resInfo === null){
-        return <Shimmer/>
-    }
 
     const fetchMenu = async () => {
         const data = await fetch("https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=18.5204303&lng=73.8567437&restaurantId=456986");
@@ -26,6 +23,10 @@ if (resInfo === null){
 
         console.log("Menu API Called -> " + json.data)
         setResInfo(json?.data?.cards[0]?.card?.card?.info)
+    }
+    
+    if (resInfo === null){
+        return <Shimmer/>
     }
 
 
