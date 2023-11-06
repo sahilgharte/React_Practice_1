@@ -3,8 +3,6 @@ import ReactDOM from "react-dom/client";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 
-// https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=18.5204303&lng=73.8567437&restaurantId=456986
-
 
 const RestaurantMenu = () => {
 
@@ -22,15 +20,16 @@ const RestaurantMenu = () => {
 
 
         console.log("Menu API Called -> " + json.data)
-        setResInfo(json?.data?.cards[0]?.card?.card?.info)
+        setResInfo(json?.data)
     }
-    
+
     if (resInfo === null){
         return <Shimmer/>
     }
 
 
-    const {name, areaName, avgRating, city, parentId, totalRatingsString, costForTwoMessage, cuisines} = resInfo
+    const {name, areaName, avgRating, city, parentId, totalRatingsString, costForTwoMessage, cuisines} = resInfo?.cards[0]?.card?.card?.info;
+    const {itemCards, title} = resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card;
 
     return (
         <div>
@@ -43,10 +42,15 @@ const RestaurantMenu = () => {
             </div>
 
             <div className="res-card-menu">
+                <h2>{title}</h2>
                 <ul>
-                    <li>Biryani</li>
-                    <li>Burger</li>
-                    <li>Paneer Chilli</li>
+                   { itemCards.map((res) => (
+                   <li>{res.card.info.name} - {res.card.info.description}</li>
+            
+                   
+                   ))}
+                    {/* <li>Burger</li>
+                    <li>Paneer Chilli</li> */}
                 </ul>
             </div>
 
