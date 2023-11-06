@@ -50,7 +50,7 @@ const RestaurantMenu = () => {
                 <h2>{title}</h2>
                 <ul>
                    { itemCards.map((res) => (
-                   <li key={res.card.info.id}>{res.card.info.name} - {res.card.info.description}</li>
+                   <li key={res.card.info.id}>{res.card.info.name} - {"Rs. "+res.card.info.price/100}</li>
             
                    
                    ))}
