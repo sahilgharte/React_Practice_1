@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import RestaurantCard from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 import { useState, useEffect } from "react";
+import { RES_URL } from "../utils/constants";
 
 const Body = () =>{
 

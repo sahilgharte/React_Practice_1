@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
+import { RES_INFO_URL } from "../utils/constants";
 
 
 const RestaurantMenu = () => {
@@ -45,7 +46,7 @@ const RestaurantMenu = () => {
                 <h2>{title}</h2>
                 <ul>
                    { itemCards.map((res) => (
-                   <li>{res.card.info.name} - {res.card.info.description}</li>
+                   <li id={res.card.info.id}>{res.card.info.name} - {res.card.info.description}</li>
             
                    
                    ))}
