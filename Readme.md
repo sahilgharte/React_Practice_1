@@ -119,3 +119,4 @@
     1. Added  a new componenet for menu for restaurant.
     2. Called all restaurant menu list on restaurant Menu component.
     3. Called api onClick restaurant card using Link.
+    4. Structure the api's and optimised the api call.
