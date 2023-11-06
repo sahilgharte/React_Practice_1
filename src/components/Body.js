@@ -4,6 +4,7 @@ import RestaurantCard from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 import { useState, useEffect } from "react";
 import { RES_URL } from "../utils/constants";
+import { Link } from "react-router-dom";
 
 const Body = () =>{
 
@@ -80,7 +81,7 @@ const Body = () =>{
                         // Unique Key >>>>>>>>> index
                         // Only use index if and only if there is no unique is
                         filterListOfRestaurant.map((restaurant, index) => (
-                            <RestaurantCard key={restaurant.info.id} resData = {restaurant} />
+                            <Link key={restaurant.info.id} to={"/restaurant/"+restaurant.info.id}><RestaurantCard resData = {restaurant} /></Link>
                         ))
                     }
 

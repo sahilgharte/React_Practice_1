@@ -3,9 +3,13 @@ import ReactDOM from "react-dom/client";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 import { RES_INFO_URL } from "../utils/constants";
+import { useParams } from "react-router-dom";
 
 
 const RestaurantMenu = () => {
+
+    const params = useParams();
+    console.log("---> "+ params.id)
 
     const [resInfo, setResInfo] = useState(null);
 
@@ -15,7 +19,7 @@ const RestaurantMenu = () => {
 
 
     const fetchMenu = async () => {
-        const data = await fetch("https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=18.5204303&lng=73.8567437&restaurantId=456986");
+        const data = await fetch(RES_INFO_URL+params.id);
         const json = await data.json();
 
 
@@ -46,7 +50,7 @@ const RestaurantMenu = () => {
                 <h2>{title}</h2>
                 <ul>
                    { itemCards.map((res) => (
-                   <li id={res.card.info.id}>{res.card.info.name} - {res.card.info.description}</li>
+                   <li key={res.card.info.id}>{res.card.info.name} - {res.card.info.description}</li>
             
                    
                    ))}
