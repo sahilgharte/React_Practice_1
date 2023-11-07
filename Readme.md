@@ -121,3 +121,6 @@
     3. Called api onClick restaurant card using Link.
     4. Structure the api's and optimised the api call.
     5. Used hook called as useParam to fetch the url end-Point.
+
+    # ------------- Day 16 --------------
+    1. Build about page using Class Based Components.
