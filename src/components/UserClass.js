@@ -9,10 +9,9 @@ class UserClass extends React.Component{
 
     render(){
         return (<div className="res-card">
-            <h2>Name: Sahil Gharte</h2>
-            <h3>Age: 23</h3>
-            <h3>Email: sahilgharte4@gmail.com</h3>
-            <h3>Phone: +91 9370778677</h3>
+            <h2>Name: {this.props.name}</h2>
+            <h3>Age: {this.props.age}</h3>
+            <h3>Phone: +91 {this.props.phone}</h3>
         </div>)
     }
 }
