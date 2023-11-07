@@ -55,8 +55,6 @@ const RestaurantMenu = () => {
 
 
                         ))}
-                        {/* <li>Burger</li>
-    <li>Paneer Chilli</li> */}
                     </ul></>
                 ))}
             </div>
