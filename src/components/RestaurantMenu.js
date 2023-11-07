@@ -49,13 +49,16 @@ const RestaurantMenu = () => {
 
             <div className="res-card-menu">
                 {response.map((response) => (
-                <><h2>{response?.card?.card?.title}</h2><ul>
-                        {response?.card?.card?.itemCards?.map((res) => (
-                            <li key={res.card.info.id}>{res.card.info.name} - {"Rs. " + res.card.info.price / 100}</li>
+                    <div className="res-menu-list">
+                        <h2>{response?.card?.card?.title}</h2>
+                        <ul>
+                            {response?.card?.card?.itemCards?.map((res) => (
+                                <li key={res.card.info.id}>{res.card.info.name} - {"Rs. " + res.card.info.price / 100}</li>
 
 
-                        ))}
-                    </ul></>
+                            ))}
+                        </ul>
+                    </div>
                 ))}
             </div>
 
