@@ -142,8 +142,3 @@ a{
     text-decoration: none;
     color: black;
 }
-
-.user-card-container{
-    display: flex;
-    flex-wrap: wrap;
-}
