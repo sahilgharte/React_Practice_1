@@ -34,7 +34,8 @@ const RestaurantMenu = () => {
 
 
     const {name, areaName, avgRating, city, parentId, totalRatingsString, costForTwoMessage, cuisines} = resInfo?.cards[0]?.card?.card?.info;
-    const response = resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1];
+
+    const response = resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards;
 
     return (
         <div>
@@ -47,16 +48,17 @@ const RestaurantMenu = () => {
             </div>
 
             <div className="res-card-menu">
-                <h2>{response?.card?.card?.title}</h2>
-                <ul>
-                   { response?.card?.card?.itemCards?.map((res) => (
-                   <li key={res.card.info.id}>{res.card.info.name} - {"Rs. "+res.card.info.price/100}</li>
-            
-                   
-                   ))}
-                    {/* <li>Burger</li>
-                    <li>Paneer Chilli</li> */}
-                </ul>
+                {response.map((response) => (
+                <><h2>{response?.card?.card?.title}</h2><ul>
+                        {response?.card?.card?.itemCards?.map((res) => (
+                            <li key={res.card.info.id}>{res.card.info.name} - {"Rs. " + res.card.info.price / 100}</li>
+
+
+                        ))}
+                        {/* <li>Burger</li>
+    <li>Paneer Chilli</li> */}
+                    </ul></>
+                ))}
             </div>
 
         </div>
