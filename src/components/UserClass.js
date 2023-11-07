@@ -2,7 +2,11 @@ import React from "react";
 import { ReactDOM } from "react-router-dom";
 
 class UserClass extends React.Component{
-    
+
+    constructor(props){
+        super(props);
+    }
+
     render(){
         return (<div className="res-card">
             <h2>Name: Sahil Gharte</h2>
