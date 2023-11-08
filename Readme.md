@@ -131,5 +131,6 @@
     # ------------- Day 17 --------------
     1. Understood the working and how to use States inside the class based Components.
     2. Implemented states inside class based components.
+    3. Updated the class baseed components using setState.
 
  
