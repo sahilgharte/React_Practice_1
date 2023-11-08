@@ -132,5 +132,6 @@
     1. Understood the working and how to use States inside the class based Components.
     2. Implemented states inside class based components.
     3. Updated the class baseed components using setState.
+    4. Understood the difference in working od state inside the functional and class based component.
 
  
