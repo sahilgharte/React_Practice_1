@@ -127,4 +127,8 @@
     2. Implemented the class based compoenent inside the about page.
     3. Added additional restaurant menu inside the menu cards.
     4. Enhanced the UI for restaurant cards.
+
+    # ------------- Day 17 --------------
+    1. Understood the working and how to use States inside the class based Components.
+
  
