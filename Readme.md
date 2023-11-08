@@ -124,3 +124,5 @@
 
     # ------------- Day 16 --------------
     1. Build about page using Class Based Components.
+    2. Implemented the class based compoenent inside the about page.
+ 
